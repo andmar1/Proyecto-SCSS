@@ -1,0 +1,33 @@
+// Usa sintaxis de node js 
+//Los required nos traen los que tenemos en los nodemodules siempre que lo tengamos instalado, esto para hacer uso de sus herramientos 
+
+const { series, parallel } = require('gulp');       //jala las dependencias que querramos usar 
+
+function css( done ){
+    console.log(`Compilando..... SASS`)
+    done();
+}
+
+function javascript( done ){
+    console.log(`Compilando..... JavaScript`)
+    done();
+}
+
+function minificarHTML( done ){
+    console.log(`Minificando HTML`)
+    done();
+}
+
+
+// Asignar las funciones 
+exports.css = css;   //Le asignamos la funcion para exportarla
+exports.javascript = javascript
+
+// compilar varias funciones a la vez por medio de series 
+// exports.tareas = series( css, javascript, minificarHTML)
+
+// Podemos ejecutar solo gulp por default ejecutando asi las tareas
+// exports.default = series( css, javascript, minificarHTML )
+
+// podemos ejecutar las tareas en paralelo de acuerdo al trabajo de cada funcion "tarea"
+exports.default = parallel( css, javascript, minificarHTML )

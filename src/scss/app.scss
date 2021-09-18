@@ -1,0 +1,6 @@
+@import 'base/normalize.scss';   //agregar primero normalize
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+@import 'base/variables';     //importar archivo de variables
+@import 'base/globales'; 
+
+@import 'layout/header';

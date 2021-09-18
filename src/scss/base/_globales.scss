@@ -1,0 +1,44 @@
+html{
+    font-size: 62.5;  //hack para tener 10px = 1rem 
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{             //sniped de paul irish
+    box-sizing: inherit;
+}
+
+body{
+    font-family: $fuentePrincipal;
+    font-size: 1.6rem;
+}
+
+p{
+    font-size: 2rem;
+    color: negro;
+}
+
+.contenedor{
+    max-width:  120rem;
+    margin: 0 auto;  //centrar
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;     //Hacer las imagenes responsivas
+}
+h1,h2,h3{                 //Quitarle el margen a los headers
+    margin: 0;
+}
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3rem;
+}

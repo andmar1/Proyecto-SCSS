@@ -1,0 +1,23 @@
+.header{
+    background-color: $verde;
+
+    .contenido-header{
+        padding: $separacion / 2 0;  
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    //Centar verticalmente
+    }
+    h1{
+        color: $blanco;
+    }
+}
+
+.navegacion-principal{
+
+    a{
+
+    }
+
+}
+
+
