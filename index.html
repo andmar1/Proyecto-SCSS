@@ -13,13 +13,199 @@
             <h1>Rock & EDM Festival</h1>
             
             <nav class="navegacion-principal">
-                <a href="#">Line up</a>
-                <a href="#">Galería</a>
-                <a href="#">Boletos</a>
+                <a href="#lineup">Line up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletos">Boletos</a>
             </nav>
         </div>
     </header>
 
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Rock & EDM Festival
+                    <span>Julio 2021, Guadalajara, México</span>
+                </h2>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+    </div>
 
+    <div class="sobre-festival contenedor">
+        <div class="imagen">
+            <img src="build/img/imagen_vocalista.jpg" alt="Imagen vocalista">
+
+        </div>
+
+        <div class="contenido-festival">
+            <h2>Rock & EDM Festival</h2>
+            <p class="fecha"> Julio 2021, Guadalajara, México</p>
+            <p class="texto">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non molestiae blanditiis, voluptate explicabo, rerum in tempore aliquam reiciendis harum inventore placeat dolores suscipit nam sed soluta quam eos sapiente eaque.
+            </p>
+        </div>
+    </div>
+
+    <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
+
+        <p class="dia"> Vierner 21</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+
+                <ul class="calendario">
+                    <li>24:00 | <span>Metallica</span></li>
+                    <li>22:00 | <span>Pearl Jam</span></li>
+                    <li>20:00 | <span>Korn</span></li>
+                    <li>19:00 | <span>Muse</span></li>
+                    <li>18:00 | <span>Megadeth</span></li>
+                    <li>17:00 | <span>30 Seconds to Mars</span></li>
+                </ul>
+
+            </div>
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario EDM</p>
+
+                <ul class="calendario">
+                    <li>24:00 | <span>Deadmau5</span></li>
+                    <li>22:00 | <span>Tiësto</span></li>
+                    <li>20:00 | <span>Hardwell</span></li>
+                    <li>19:00 | <span>Like Mike</span></li>
+                    <li>18:00 | <span>Steve Aoki</span></li>
+                    <li>17:00 | <span>Audien</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="dia">Sabado 22</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+
+                <ul class="calendario">
+                    <li>24:00 | <span>Megadeth</span></li>
+                    <li>22:00 | <span>Avantasia</span></li>
+                    <li>20:00 | <span>Iron Maiden</span></li>
+                    <li>19:00 | <span>Arch Enemy</span></li>
+                    <li>18:00 | <span>Haggard</span></li>
+                    <li>17:00 | <span>Epica</span></li>
+                </ul>
+            </div>
+
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario EDM</p>
+
+                <ul class="calendario">
+                    <li>24:00 | <span>Paul Van dik</span></li>
+                    <li>22:00 | <span>Skrillex</span></li>
+                    <li>20:00 | <span>David Guetta</span></li>
+                    <li>19:00 | <span>Martin Garrix</span></li>
+                    <li>18:00 | <span>Calvin Harris</span></li>
+                    <li>17:00 | <span>Alan Walker</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galeria</h3>
+        <ul class="galeria-imagenes">
+
+        </ul>
+    </section>
+
+    <section id="boletos" class="boletos bg-verde">
+        <h3>Boletos</h3>
+
+        <div class="contenedor-boletos contenedor">
+           
+            <div class="basico plan">
+                <p>Pase 1 Día</p>
+
+                <table class="pase">
+                    <thead>
+                        <tr>
+                            <th>
+                                Incluye
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Acceso a todos los escenarios
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Comida y Bebida
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>$100</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="premium plan">
+                <p>Pase 2 Días</p>
+
+                <table class="pase">
+                    <thead>
+                        <tr>
+                            <th>
+                                Incluye
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Acceso a todos los escenarios
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Comida y Bebida
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Camisa del evento
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Acceso VIP
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>$180</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>
+            Rock & EDM Festival. Todos Los Derechos Reservados.
+        </p>
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
 </body>
 </html>

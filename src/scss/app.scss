@@ -1,6 +1,14 @@
 @import 'base/normalize.scss';   //agregar primero normalize
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap');
 @import 'base/variables';     //importar archivo de variables
+@import 'base/mixins';
 @import 'base/globales'; 
+@import 'base/utilidades';
 
 @import 'layout/header';
+@import 'layout/video';
+@import 'layout/festival';
+@import 'layout/lineup';
+@import 'layout/galeria';
+@import 'layout/boletos';
+@import 'layout/footer';

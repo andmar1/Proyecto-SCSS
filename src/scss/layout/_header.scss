@@ -3,21 +3,46 @@
 
     .contenido-header{
         padding: $separacion / 2 0;  
-        display: flex;
-        justify-content: space-between;
-        align-items: center;    //Centar verticalmente
+
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;    //Centrar verticalmente    
+        }
     }
     h1{
         color: $blanco;
+        margin-bottom: 1rem;
+        text-align: center;
+
+        @include tablet{
+            margin-bottom: 0;
+        }
     }
+
+    // agregar clase de fijo 
+    &.fijo{
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .3rem .5rem #444;
+    }
+
 }
 
 .navegacion-principal{
+    
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
 
-    a{
-
+    a{     
+        color: $blanco;
+        font-size: 2rem;
+        // @include nuevoMixin(lowercase, 2rem);   incluir mixin de ejemplo
+        &:hover{                //para no perder el anidamiento de las etiquetas
+            color: $amarillo;
+        }
     }
-
 }
 
 
